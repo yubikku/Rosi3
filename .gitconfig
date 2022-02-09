@@ -1,0 +1,10 @@
+[user]
+	name = Jovic Gutierrez
+	email = yubikkun@gmail.com
+[core]
+	editor = vscodium --wait
+	autocrlf = input
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
