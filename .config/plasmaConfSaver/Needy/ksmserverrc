@@ -1,0 +1,18 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=1041726368000164387569300000010710006
+clientId2=1041726368000164436094600000010790007
+count=2
+program1=/usr/lib/DiscoverNotifier
+program2=/usr/bin/flameshot
+restartCommand1=/usr/lib/DiscoverNotifier,-session,1041726368000164387569300000010710006_1644383794_277723
+restartCommand2=/usr/bin/flameshot,-session,1041726368000164436094600000010790007_1644383794_278073
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=biku
+userId2=biku

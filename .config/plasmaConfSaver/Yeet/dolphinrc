@@ -1,0 +1,20 @@
+MenuBar=Disabled
+
+[General]
+Version=201
+ViewPropsTimestamp=2022,1,19,20,16,55.172
+
+[KPropertiesDialog]
+HDMI-0 VGA-0 Height 1920x1080=616
+HDMI-0 VGA-0 Width 1920x1080=444
+
+[MainWindow]
+HDMI-0 VGA-0 Height 1920x1080=477
+HDMI-0 VGA-0 Width 1920x1080=816
+HDMI-0 VGA-0 XPosition 1920x1080=826
+HDMI-0 VGA-0 YPosition 1920x1080=310
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Search]
+Location=Everywhere

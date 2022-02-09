@@ -1,0 +1,52 @@
+[Audio Preview Settings]
+Autoplay=false
+
+[KFileDialog Settings]
+Recent Files[$e]=Wallpapers/wallpaperflare-cropped.jpg,file:$HOME/Pictures/Wallpapers/1618255176254.jpg,file:$HOME/Pictures/Wallpapers/1579512775709.jpg,file:$HOME/Pictures/Wallpapers/1618255143025.jpg,file:$HOME/Pictures/Wallpapers/1618254476949.jpg,file:///run/timeshift/backup/@/usr/share/pixmaps/archlinux-logo.svg,file:$HOME/Pictures/Wallpapers/dual-monitor-01_2.png,file:$HOME/Pictures/Wallpapers/dual-monitor-01_1.png,file:$HOME/Pictures/Wallpapers/1115546_1.png,file:$HOME/Pictures/Wallpapers/1115546_2.png,file:$HOME/Pictures/Wallpapers/itl_2.png,file:$HOME/Pictures/Wallpapers/itl_1.png,file:$HOME/Pictures/Wallpapers/wallpaperflare-cropped(1).jpg,file:$HOME/Pictures/Wallpapers/wallpaperflare-cropped.jpg
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/Pictures/,file:$HOME/,file:$HOME/Documents/,file:///run/timeshift/backup/@/usr/share/pixmaps/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+HDMI-0 VGA-0 Height 1920x1080=465
+HDMI-0 VGA-0 Width 1920x1080=430
+
+[PlasmaViews][Panel 24][Defaults]
+thickness=20
+
+[PlasmaViews][Panel 24][Horizontal1920]
+thickness=20
+
+[PlasmaViews][Panel 29][Defaults]
+thickness=20
+
+[PlasmaViews][Panel 29][Horizontal1920]
+thickness=20
+
+[PlasmaViews][Panel 3]
+alignment=2
+
+[PlasmaViews][Panel 3][Defaults]
+maxLength=1071
+minLength=1060
+thickness=45
+
+[PlasmaViews][Panel 3][Horizontal1920]
+thickness=38
+
+[PlasmaViews][Panel 3][Vertical1080]
+maxLength=1071
+minLength=1060
+thickness=45
+
+[PlasmaViews][Panel 40][Defaults]
+thickness=20
+
+[PlasmaViews][Panel 40][Horizontal1920]
+thickness=20
+
+[ScreenConnectors]
+0=HDMI-0
+1=VGA-0
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js
