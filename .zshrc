@@ -13,24 +13,9 @@ fi
 autoload -U colors && colors
 PS1="%B%{$fg[green]%}[%{$fg[blue]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
 
-
-
-# Remove from default Arch files
-if [ -r ~/.zshrc -a -r ~/.zshrc.global -a ! -r ~/.zshrc.local ] ; then
-    printf '-!-\n'
-    printf '-!- Looks like you are using the old zshrc layout of grml.\n'
-    printf '-!- Please read the notes in the grml-zsh-refcard, being'
-    printf '-!- available at: http://grml.org/zsh/\n'
-    printf '-!-\n'
-    printf '-!- If you just want to get rid of this warning message execute:\n'
-    printf '-!-        touch ~/.zshrc.local\n'
-    printf '-!-\n'
-fi
-
 # Aliasses
 alias ls='ls --color=auto'
 alias cmatrix='cmatrix -s -C blue'
-alias code='vscodium'
 
 # History in Cache Directory:
 HISTSIZE=1000
@@ -49,14 +34,9 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # Load; Should be last
 # Arch
-# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Fedora/Debian
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Debian
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh

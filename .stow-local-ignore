@@ -1,0 +1,12 @@
+# Stow ignore lists
+# Creating this file overrides the default stow ignore list
+
+# git
+\.git
+
+## Folders/directories
+scripts
+wallpapers
+
+
+README.md
