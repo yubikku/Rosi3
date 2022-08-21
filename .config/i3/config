@@ -23,7 +23,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Wallpaper
-exec --no-startup-id wal -i $HOME/Downloads/Wallpaper.png -a "80"
+exec_always --no-startup-id wal -R 
 
 # Compositor
 exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1 --fade-delta=0
