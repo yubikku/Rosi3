@@ -13,6 +13,8 @@ fi
 autoload -U colors && colors
 PS1="%B%{$fg[green]%}[%{$fg[blue]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
 
+# Pywal
+(cat $HOME/.cache/wal/sequences &)
 # Aliasses
 alias ls='ls --color=auto'
 alias cmatrix='cmatrix -s -C blue'
