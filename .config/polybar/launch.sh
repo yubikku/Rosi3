@@ -8,6 +8,6 @@ killall -q polybar
 # killall -q polybar
 
 # Launch Polybar, using default config location ~/.config/polybar/config.ini
-polybar mybar 2>&1 | tee -a /tmp/polybar.log & disown
+polybar bar 2>&1 | tee -a /tmp/polybar.log & disown
 
 echo "Polybar launched..."
