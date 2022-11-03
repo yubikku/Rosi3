@@ -29,7 +29,7 @@ exec_always --no-startup-id wal -R
 exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1 --fade-delta=0
 
 # Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # i3-Gaps Specific
 for_window [class="^.*"] border pixel 2
