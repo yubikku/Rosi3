@@ -1,30 +1,47 @@
 # Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
+
 # Read `man 5 sway` for a complete reference.
 
 ### Variables
-#
+
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
+
+
+# Basic Programs (to be transfered over swhkd)
+set $browser firefox
+set $explr thunar
+set $explr-cli lf
+set $tskmngr htop
+set $email neomutt
+set $music ncmpcpp
+set $wireless nmcli dev wifi rescan & $term -e nmtui
+set $notes obsidian
+set $audio pulsemixer
+set $sync syncthing
+
 # Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
+
 # Your preferred terminal emulator
-set $term xfce4-terminal
+set $term kitty
+
+# Polkit (Gnome)
+exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu wofi --show=drun | xargs swaymsg exec --
 
 ### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/default.png fill
-#
+
+# Wallpaper 
+output * bg /home/bikku/pics/Wallpaper.png fill
+
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -32,14 +49,14 @@ output * bg /usr/share/backgrounds/default.png fill
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 ### Idle configuration
-#
+
 # Example configuration:
-#
+
 # exec swayidle -w \
 #          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
 #          before-sleep 'swaylock -f -c 000000'
-#
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -66,10 +83,10 @@ output * bg /usr/share/backgrounds/default.png fill
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec wofi
+    bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -82,7 +99,10 @@ output * bg /usr/share/backgrounds/default.png fill
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+BackSpace exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # Sticky Floating Windows
+    bindsym $mod+s sticky toggle
 #
 # Moving around:
 #
@@ -144,21 +164,21 @@ output * bg /usr/share/backgrounds/default.png fill
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym $mod+y layout stacking
+    bindsym $mod+t layout tabbed
+    bindsym $mod+u layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+f floating toggle
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    bindsym $mod+Shift+p focus parent
 #
 # Scratchpad:
 #
@@ -194,24 +214,48 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+x mode "resize"
+
+#
+# Gaps and Borders
+#
+    gaps inner 5
+    gaps outer 5
+    default_border pixel 2
 
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+    swaybar_command waybar
     }
 }
+
+#
+# Basic Programs:
+#
+
+    bindsym $mod+w exec $browser
+    bindsym $mod+Shift+w exec $wireless
+    bindsym $mod+e exec $term -e $explr-cli 
+    bindsym $mod+Shift+e exec $explr
+    bindsym $mod+r exec $term -e $email
+    bindsym $mod+Shift+r exec $term -e $tskmngr
+    bindsym $mod+m exec $term -e $music
+    bindsym $mod+n exec $notes
+    bindsym $mod+a exec $term -e  $audio 
+    bindsym $mod+Shift+s exec $term -e $sync
+#
+# Laptop Specifics:
+#
+## Audio
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+## Brightness
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 include /etc/sway/config.d/*
