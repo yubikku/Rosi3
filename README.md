@@ -1,7 +1,21 @@
 # Dotfiles
 
 ## Currently underworking progress
+>Restructuring for Prebuilts and Existing Systems
 
+
+## Usage:
+Clone this repo:
+```
+git clone <this repo> ~/.dotfiles
+```
+
+Install and use GNU `stow`
+```
+stow <folder>
+```
+
+> These are for old archive_scripts that I'm gonna use for bspwm and hyprland bootstraping environments (removing soon)
 # Currently Working on an installer for 3 Bases:
 - [ ] Debian/Ubuntu
 - [ ] Fedora
