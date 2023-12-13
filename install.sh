@@ -23,6 +23,12 @@ nix-env -iA \
 	nixpkgs.fzf \
 	nixpkgs.ffmpeg \
 
+# Stow / Symlink Configs
+stow git
+stow zsh
+stow tmux
+stow nvim
+
 # add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells
 
@@ -30,6 +36,9 @@ command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s $(which zsh) $USER
 
 # Make Directories
+## Cache for zsh
 mkdir $HOME/.cache
 mkdir $HOME/.cache/zsh
 touch $HOME/.cache/zsh/history
+
+echo "NOTE: Reload the Terminal to take the install in effect"
