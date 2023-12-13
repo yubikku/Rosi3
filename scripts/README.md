@@ -1,4 +1,4 @@
-# Scripts
+## Install Scripts
 Some scripts to make my life easier: Post install scripts, Setup Scripts, shell scripts and the likes.
 
 >edit the approriate 

@@ -3,6 +3,11 @@
 ## Currently underworking progress
 >Restructuring for Prebuilts/Existing Systems and Building from the ground up.
 
+## Requirements:
+Install the needed dependencies (usually these are installed by default):
+```
+curl
+```
 
 ## Usage:
 Clone this repo:
@@ -30,3 +35,5 @@ stow <folder>
 - [ ] Sway
 - [ ] Zsh
 - [ ] X
+
+> Notes: I'll try to make the system not be dependent on `stow` in the future. 
