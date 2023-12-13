@@ -28,7 +28,7 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # Source Nix installer
-if [ -e /home/biku/.nix-profile/etc/profile.d/nix.sh ]; then . /home/biku/.nix-profile/etc/profile.d/nix.sh; fi
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
 # Source Should be Last: $ZDOTDIR/ext/<file>
 # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
