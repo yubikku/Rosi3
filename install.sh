@@ -22,6 +22,7 @@ nix-env -iA \
 	nixpkgs.cmatrix \
 	nixpkgs.fzf \
 	nixpkgs.ffmpeg \
+	nixpkgs.lf
 
 # Stow / Symlink Configs
 stow git
