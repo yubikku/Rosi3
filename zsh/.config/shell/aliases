@@ -48,8 +48,16 @@ alias \
 	xq="xbps-query" \
 	z="zathura"
 
-# alias \
-	lf="lfub" \
-	magit="nvim -c MagitOnly" \
-	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
-	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+# Edit config
+alias \
+	cfa="$EDITOR ~/.config/shell/aliases" \
+	cfz="$EDITOR ~/.config/zsh/.zshrc" \
+	cfv="$EDITOR ~/.config/nvim/config.lua" \
+
+# Tmux Aliases
+alias \
+	tmls="tmux ls" \
+	tmns="tmux new -s" \
+	tmks="tmux kill-session -t"\
+	tma="tmux a"\
+	tmas="tmux attach -t"\
