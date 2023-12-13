@@ -15,12 +15,14 @@ done; unset command
 alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
-	rm="rm -vI" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
 	yt="yt-dlp --embed-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
+
+alias rm="trash -v" # aliased to trash-cli
+
 
 # Colorize commands when possible.
 alias \
@@ -28,10 +30,11 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
-	ip="ip -color=auto"
+	ip="ip -color=auto" \
+	cmatrix='cmatrix -s -a -C blue'
 
 # These common commands are just too long! Abbreviate them.
-# alias \
+alias \
 	ka="killall" \
 	g="git" \
 	trem="transmission-remote" \

@@ -5,17 +5,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Jovic's config for Zhy shell
-# Loosely based from Luke Smith's config:
-# https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
-
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[green]%}[%{$fg[blue]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[green]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
 
 # Aliasses
-alias ls='ls --color=auto'
-alias cmatrix='cmatrix -s -C blue'
+[ -f "${XDG_CONFIG_HOME}/shell/aliases" ] && source "${XDG_CONFIG_HOME}/shell/aliases"
 
 # History in Cache Directory:
 HISTSIZE=1000
@@ -32,11 +27,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# Load; Should be last
-# Arch
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Source Nix installer
+if [ -e /home/biku/.nix-profile/etc/profile.d/nix.sh ]; then . /home/biku/.nix-profile/etc/profile.d/nix.sh; fi
 
-# Debian
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Source Should be Last: $ZDOTDIR/ext/<file>
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
