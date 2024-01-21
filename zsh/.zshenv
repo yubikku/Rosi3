@@ -2,6 +2,8 @@
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
+export NOTES="$HOME/Notes"
+export TODO="$NOTES/TODO.md"
 
 # cleaning up home folder
 export XDG_CONFIG_HOME="$HOME/.config"

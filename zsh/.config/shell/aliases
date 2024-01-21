@@ -46,13 +46,14 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura"
+	z="zathura" \
+	todo="$EDITOR $TODO"
 
 # Edit config
 alias \
 	cfa="$EDITOR ~/.config/shell/aliases" \
 	cfz="$EDITOR ~/.config/zsh/.zshrc" \
-	cfv="$EDITOR ~/.config/nvim/config.lua" \
+	cfv="$EDITOR ~/.config/nvim" \
 	cft="$EDITOR ~/.config/tmux/tmux.conf" \
 
 # Tmux Aliases
