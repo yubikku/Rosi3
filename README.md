@@ -6,8 +6,12 @@
 ## Requirements:
 Install the needed dependencies (usually these are installed by default):
 ```
-curl
+curl wget
 ```
+
+## Misc Means Aesthetics:
+- `cava`
+- `neofetch`
 
 ## Usage:
 Clone this repo:
