@@ -30,6 +30,7 @@ set $term xfce4-terminal
 
 # Polkit (Gnome)
 exec_always /usr/lib/polkit-1-gnome/polkit-gnome-authentication-agent-1
+exec_always sh -c "killall yambar; yambar &"
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -102,6 +103,9 @@ output * bg ~/.local/share/bg.png fill
 
     # Sticky Floating Windows
     bindsym $mod+s sticky toggle
+
+    # ScreenShot
+    bindsym Print exec bash ~/.dotfiles/scripts/screenshot.sh
 #
 # Moving around:
 #
@@ -218,12 +222,12 @@ bindsym $mod+x mode "resize"
 #
 # Gaps and Borders
 #
-gaps inner 1
-gaps outer 1
+gaps inner 5
+gaps outer 5
 default_border pixel 2
 
 ## Opacity
-set $opacity 0.95
+set $opacity 1
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
 
@@ -231,10 +235,10 @@ for_window [app_id=".*"] opacity $opacity
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    swaybar_command waybar
-    }
-}
+# bar {
+#     swaybar_command waybar
+#     }
+# }
 
 #
 # Basic Programs:
@@ -259,7 +263,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 ## Brightness
-bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 include /etc/sway/config.d/*
