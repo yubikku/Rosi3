@@ -1,0 +1,106 @@
+Mar 12 20:36 : config: option 'buffer_time' on line 24 was not recognized
+Mar 12 20:36 : update: added /Dvořák： New World Symphony ⧸ Tomomi Nishimoto [vGFqG0ABqg4].mp3
+Mar 12 20:36 : update: added /Wag_Kang_Bastos_-_Reloaded.mp3
+Mar 12 20:36 : update: added /Wag_Kang_Bastos_-_Reloaded.mpga
+Mar 12 20:36 : update: added /classical music but it's lofi II 🎹 [daFVJgvAie4].mp3
+Mar 12 20:36 : update: added /Journey Through Time 🏰 [medieval lofi] [WBnjO3zEwCM].m4a
+Mar 12 20:36 : update: added /Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3
+Mar 12 20:36 : update: added /도서관에서 공부할 때 최대 집중력이 필요하다 ｜ 3 hour lofi hip hop mix ⧸ lofi music for studying , work [hGrIgIfCxP0].mp3
+Mar 12 20:37 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 12 21:16 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 12 21:59 : player: played "Dvořák： New World Symphony ⧸ Tomomi Nishimoto [vGFqG0ABqg4].mp3"
+Mar 17 19:34 : config: option 'buffer_time' on line 24 was not recognized
+Mar 17 19:34 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:34 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:40 : player: played "classical music but it's lofi II 🎹 [daFVJgvAie4].mp3"
+Mar 17 19:41 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:41 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:41 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:41 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:41 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:51 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 19:51 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 20:10 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 17 20:29 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 17 20:29 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 17 20:29 : player: played "Dvořák： New World Symphony ⧸ Tomomi Nishimoto [vGFqG0ABqg4].mp3"
+Mar 18 05:28 : player: played "classical music but it's lofi II 🎹 [daFVJgvAie4].mp3"
+Mar 18 21:36 : config: option 'buffer_time' on line 24 was not recognized
+Mar 18 21:58 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 18 22:19 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 18 22:39 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 18 23:00 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 18 23:20 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 18 23:41 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 19 00:02 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 19 00:22 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 19 00:43 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 19 00:54 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 19 10:52 : config: option 'buffer_time' on line 24 was not recognized
+Mar 19 12:36 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 19 12:36 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 19 12:36 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Mar 19 12:37 : update: added /30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3
+Mar 19 16:46 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Mar 19 16:46 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 17:16 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 17:46 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 18:16 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 18:46 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 20:06 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 20:36 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 21:06 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 21:36 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 19 21:47 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 20 20:44 : config: option 'buffer_time' on line 24 was not recognized
+Mar 24 13:16 : config: option 'buffer_time' on line 24 was not recognized
+Mar 25 01:04 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 25 08:46 : config: option 'buffer_time' on line 24 was not recognized
+Mar 26 13:05 : config: option 'buffer_time' on line 24 was not recognized
+Mar 26 13:38 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 13:58 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 14:19 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 14:40 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 15:00 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 15:21 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 15:41 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 16:02 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 16:05 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 26 17:01 : config: option 'buffer_time' on line 24 was not recognized
+Mar 28 09:48 : config: option 'buffer_time' on line 24 was not recognized
+Mar 28 11:55 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 28 14:57 : player: played "도서관에서 공부할 때 최대 집중력이 필요하다 ｜ 3 hour lofi hip hop mix ⧸ lofi music for studying , work [hGrIgIfCxP0].mp3"
+Mar 28 15:14 : player: played "classical music but it's lofi II 🎹 [daFVJgvAie4].mp3"
+Mar 28 18:38 : config: option 'buffer_time' on line 24 was not recognized
+Mar 28 22:09 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 28 22:39 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 28 23:09 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 28 23:39 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 29 00:05 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 29 09:53 : config: option 'buffer_time' on line 24 was not recognized
+Mar 29 13:22 : config: option 'buffer_time' on line 24 was not recognized
+Mar 29 14:16 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 29 14:46 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 29 15:16 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 29 15:46 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 29 16:16 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 29 16:16 : player: played "30 Minutes of Deep Space Sounds Brown Noise for Sleep, Focus or Relax.mp3"
+Mar 30 08:08 : config: option 'buffer_time' on line 24 was not recognized
+Mar 30 20:37 : config: option 'buffer_time' on line 24 was not recognized
+Mar 30 21:03 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 30 21:23 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 30 21:44 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 30 22:05 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 30 22:25 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 30 22:46 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 30 23:06 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Mar 30 23:18 : player: played "Warhammer 40,000 Mechanicus OST  - Children of the Omnissiah[Extended] [ztzq05IzYds].mp3"
+Apr 02 22:08 : config: option 'buffer_time' on line 24 was not recognized
+Apr 02 23:06 : exception: Failed to open /home/biku/.config/mpd/playlists: No such file or directory
+Apr 02 23:06 : player: played "Journey Through Time 🏰 [medieval lofi] [WBnjO3zEwCM].m4a"
+Apr 03 07:03 : player: played "도서관에서 공부할 때 최대 집중력이 필요하다 ｜ 3 hour lofi hip hop mix ⧸ lofi music for studying , work [hGrIgIfCxP0].mp3"
+Apr 03 16:19 : config: option 'buffer_time' on line 24 was not recognized
+Apr 05 16:20 : config: option 'buffer_time' on line 24 was not recognized
+Apr 05 19:15 : config: option 'buffer_time' on line 24 was not recognized
+Apr 06 12:01 : config: option 'buffer_time' on line 24 was not recognized
+Apr 07 13:45 : config: option 'buffer_time' on line 24 was not recognized
