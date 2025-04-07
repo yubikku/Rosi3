@@ -60,17 +60,17 @@ sudo ~/.dotfiles/install.sh
 ```
 stow <folder>
 ```
-
-> These are for old archive_scripts that I'm gonna use for bspwm and hyprland bootstraping environments 
-### Currently Working on an installer for 3 Bases:
+### Currently Working on an installer for 2 Bases:
 - [ ] Debian/Ubuntu
 - [ ] Arch
-- [x] Minimal (Terminal Utils Only)
 
 ### My personal dotfiles with:
 - [ ] i3
 - [ ] Sway
-- [ ] Zsh
-- [ ] X
+- [ ] Hyprland
 
-> Notes: I'll try to make the system not be dependent on `stow` in the future. 
+
+
+> Notes:
+> Change the Battery according to `acpi -b` 
+> I'll try to make the system not be dependent on `stow` in the future. 

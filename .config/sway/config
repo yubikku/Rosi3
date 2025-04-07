@@ -100,7 +100,7 @@ input "1133:16500:Logitech_G304" {
     bindsym $mod+s sticky toggle
 
     # ScreenShot
-    bindsym Print exec bash ~/.dotfiles/scripts/screenshot.sh
+    bindsym Print exec bash ~/.local/bin/wl-screenshot
 #
 # Moving around:
 #

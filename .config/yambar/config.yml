@@ -179,24 +179,12 @@ bar:
               state == discharging:
                 <<: *discharging
               state == charging:
-                - string: {text: "⚡ {capacity}%"}
+                - string: {text: "🔌 {capacity}%"}
               state == full:
                 - string: {text: "⚡ {capacity}%"}
               state == "not charging":
-                - ramp:
-                    tag: capacity
-                    items:
-                      - string: {text:  , foreground: ff0000ff, font: *awesome}
-                      - string: {text:  , foreground: ffa600ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                      - string: {text:  , foreground: 00ff00ff, font: *awesome}
-                - string: {text: "BAT {capacity}%"}
+                - string: {text: "🛑 {capacity}%"}
+
     - clock:
         date-format: "%a %b %d"
         content:
@@ -206,4 +194,3 @@ bar:
           string:
             on-click: systemctl poweroff
             text: '[?]'
-            font: *awesome
