@@ -45,7 +45,7 @@ set $term i3-sensible-terminal
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
-    bindsym $mod+Shift+r exec restartR
+    bindsym $mod+Shift+r restart
 
     # Sticky Floating Windows
     bindsym $mod+s sticky toggle
