@@ -3,3 +3,5 @@
 # Use `lf` to change the background wallpaper
 # It will change the wallpaper by replacing `~/.local/share/bg`
 
+bgloc="${XDG_DATA_HOME:-$HOME/.local/share}/bg"
+

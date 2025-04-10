@@ -8,7 +8,7 @@
 awesome: &awesome Font Awesome 6 Free:style=solid:pixelsize=14
 awesome_brands: &awesome_brands Font Awesome 6 Brands:pixelsize=16
 
-std_underline: &std_underline {underline: { size: 2, color: D27E99ff}}
+std_underline: &std_underline {underline: { size: 2, color: DCA561ff}}
 
 # This is THE bar configuration
 bar:
@@ -20,8 +20,8 @@ bar:
   # Default font
   font: Adobe Helvetica:pixelsize=12
 
-  foreground: ebdbb2ff
-  background: 1b1b1bff
+  foreground: E6C384ff
+  background: 16161Dff
 
   border:
     color: 999999cc
@@ -39,8 +39,8 @@ bar:
           - string: &mail    {<<: *i3_common, text: , font: *awesome}
           - string: &music   {<<: *i3_common, text: , font: *awesome}
           - focused: &focused
-              deco: {stack: [background: {color: E6C3844c}, <<: *std_underline]}
-          - invisible: &invisible {foreground: FABD2FFF}
+              deco: {stack: [background: {color: 223249ff}, <<: *std_underline]}
+          - invisible: &invisible {foreground: D27E99FF}
           - urgent: &urgent
               foreground: 000000ff
               deco: {stack: [background: {color: bc2b3fff}, <<: *std_underline]}
@@ -104,7 +104,7 @@ bar:
             conditions:
               ~activated: {empty: {}}
               activated:
-                - string: {text: "{app-id}", foreground: FABD2FFF}
+                - string: {text: "{app-id}", foreground: 7E9CD8FF}
                 - string: {text: ": {title}", max: 50}
   center:
     - clock:

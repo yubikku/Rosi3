@@ -60,17 +60,12 @@ sudo ~/.dotfiles/install.sh
 ```
 stow <folder>
 ```
-### Currently Working on an installer for 2 Bases:
-- [ ] Debian/Ubuntu
-- [ ] Arch
-
-### My personal dotfiles with:
-- [ ] i3
-- [ ] Sway
-- [ ] Hyprland
-
-
+### Roadmap:
+- Currently Working on an installer for 2 Bases:
+    - [ ] Debian/Ubuntu
+    - [ ] Arch
+- [ ] Replace i3status with i3blocks
 
 > Notes:
-> Change the Battery according to `acpi -b` 
-> I'll try to make the system not be dependent on `stow` in the future. 
+> - Change the Battery according to `acpi -b` 
+> - I'll try to make the system not be dependent on `stow` in the future. 

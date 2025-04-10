@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Set to Dark Mode
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+# Set to Light Mode
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
