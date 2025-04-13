@@ -8,7 +8,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 ###############################################################################
 general {
-    interval 		= 5
+    interval 		= 10
     colors 			= true
     color_good      = '#88b090'
     color_degraded  = '#ccdc90'
@@ -16,17 +16,17 @@ general {
 }
 
 order += "volume master"
-order += "disk /"
+#order += "disk /"
 #order += "disk /home"
 #order += "run_watch DHCP"
 #order += "ipv6"
 #order += "run_watch VPN"
-order += "wireless wlp4s0"
-order += "ethernet enp0s25"
+#order += "wireless wlp4s0"
+#order += "ethernet enp0s25"
 order += "battery 1"
-order += "cpu_temperature 0"
+order += "memory"
 order += "cpu_usage 0"
-order += "load"
+#order += "load"
 order += "tztime local"
 
 wireless wlp4s0 {
@@ -45,13 +45,13 @@ battery 1 {
     format_down = ""
     last_full_capacity = true
     integer_battery_capacity = true
-    low_threshold = 11
+    low_threshold = 20
     threshold_type = percentage
     hide_seconds = true
-    status_chr = " "
-    status_bat = "BAT"
-    status_unk = " "
-    status_full = " "
+    status_chr = "🔌"
+    status_bat = "🔋"
+    status_unk = "🛑"
+    status_full = "⚡"
 }
 
 run_watch DHCP {
@@ -63,7 +63,7 @@ run_watch VPN {
 }
 
 tztime local {
-    format = "%V  %A %e.%B   %H:%M:%S"
+    format = "📅 %a %b, %d | CLK: %H:%M:%S"
 }
 
 load {
@@ -71,11 +71,7 @@ load {
 }
 
 cpu_usage {
-    format = " %usage"
-}
-
-cpu_temperature 0 {
-	format = " %degrees°C"
+    format = "🖥 %usage"
 }
 
 disk "/" {
@@ -85,9 +81,15 @@ disk "/" {
 	threshold_type = percentage_avail
 }
 
+memory {
+    format = "🧠 %percentage_used"
+    threshold_degraded = "10%"
+    format_degraded = "MEMORY!: %free"
+}
+
 volume master {
-    format = "%volume  "
-    format_muted = " "
+    format = "🔊 %volume"
+    format_muted = "🔇 MM"
     device = "default"
     mixer = "Master"
     mixer_idx = 0
