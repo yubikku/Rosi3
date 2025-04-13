@@ -2,4 +2,7 @@
 zsh/.config/zsh/.zcompdump
 
 # Lazy Vim Dump
-nvim/.config/nvim/lazy-lock.json
+.config/mpd/log
+
+# 
+
