@@ -1,4 +1,4 @@
-exec_always /usr/lib/polkit-1-gnome/polkit-gnome-authentication-agent-1
+exec_always --no-startup-id /usr/lib/polkit-1-gnome/polkit-gnome-authentication-agent-1
 #exec_always sh -c "killall yambar; yambar &"
-exec_always mpd
-exec_always syncthing -no-browser
+exec_always --no-startup-id mpd
+exec_always --no-startup-id syncthing -no-browser
