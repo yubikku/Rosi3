@@ -4,6 +4,10 @@
 # Set wallpaper:
 output * bg ~/.local/share/bg.png fill
 
+# Systemd and dbus activation environments
+exec systemctl --user import-environment WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
+exec dbus-update-activation-environment WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
+
 # Swayidle and Sway lock
 exec swayidle -w \
          timeout 300 'swaylock -f -c 000000' \

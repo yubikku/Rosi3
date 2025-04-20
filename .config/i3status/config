@@ -8,7 +8,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 ###############################################################################
 general {
-    interval 		= 10
+    interval 		= 5
     colors 			= true
     color_good      = '#88b090'
     color_degraded  = '#ccdc90'
@@ -63,7 +63,7 @@ run_watch VPN {
 }
 
 tztime local {
-    format = "📅 %a %b, %d | CLK: %H:%M:%S"
+    format = "📅 %a %b %d, %H:%M"
 }
 
 load {
