@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ydotool type $(grep -v '^#' $SNIPPETS | fuzzel -d | cut -d' ' -f1)
