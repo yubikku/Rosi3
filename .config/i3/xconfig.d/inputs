@@ -1,5 +1,5 @@
 set $mod Mod4
-set $menu --no-startup-id rofi -show drun
+set $menu --no-startup-id rofi -show-icons -show drun
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec $menu
