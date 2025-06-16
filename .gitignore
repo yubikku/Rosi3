@@ -3,3 +3,9 @@ zsh/.config/zsh/.zcompdump
 
 # Lazy Vim Dump
 .config/mpd/log
+
+# external local bin
+.local/bin/bw
+.local/bin/autotiling
+.config/mpd/database
+.config/mpd/log
