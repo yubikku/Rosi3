@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Default output mode is RGB
+MODE="rgb"
+
+# Check for hex flag
+if [ "$1" = "-h" ] || [ "$1" = "--hex" ]; then
+  MODE="hex"
+fi
+
+# Use slurp to pick a point
+GEOM=$(slurp -p) || exit 1
+
+# Choose output format for convert
+if [ "$MODE" = "hex" ]; then
+  FORMAT='#%[hex:p{0,0}]'
+else
+  FORMAT='%[pixel:p{0,0}]'
+fi
+
+# Take screenshot of selected pixel and extract color
+COLOR=$(grim -g "$GEOM" - | convert png:- -format "$FORMAT" info:)
+
+# Copy to clipboard
+printf "%s\n" "$COLOR" | wl-copy
+
+# Send desktop notification (if available)
+if command -v notify-send >/dev/null 2>&1; then
+  notify-send "Color Picked" "$COLOR"
+fi
+
+# Output to stdout too (in case you're piping or logging)
+printf "%s\n" "$COLOR"
