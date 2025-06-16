@@ -3,3 +3,6 @@ exec_always --no-startup-id /usr/lib/polkit-1-gnome/polkit-gnome-authentication-
 exec_always --no-startup-id mpd
 exec_always --no-startup-id fcxit
 exec_always --no-startup-id syncthing -no-browser
+
+# Autotiling
+exec_always --no-startup-id autotiling
