@@ -9,3 +9,4 @@ zsh/.config/zsh/.zcompdump
 .local/bin/autotiling
 .config/mpd/database
 .config/mpd/log
+.local/bin/wal

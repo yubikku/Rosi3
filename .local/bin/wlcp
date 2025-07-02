@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Simple Wayland Color Picker (wlcp) Script 
+# dependencies: `grim` `slurp` `convert` `notify-send` `wl-copy`
+# Usage:
+# `wlcp` - choose a color from the screen and prints in rgb
+# `wlcp -h` - prints in hex
+
 # Default output mode is RGB
 MODE="rgb"
 
