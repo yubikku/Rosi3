@@ -1,0 +1,76 @@
+#######################################################
+## CUSTOM KEYBINDS: (to be transfered over swhkd)
+#######################################################
+
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+
+
+#######################################################
+## BASIC PROGRAMS:
+#######################################################
+# Terminal
+set $term foot
+    bindsym $mod+Return exec $term
+
+# Menu
+set $menu fuzzel
+    bindsym $mod+d exec $menu
+
+# Browser
+set $browser firefox
+    bindsym $mod+w exec $browser
+
+# File Explorer
+set $explr-cli lf
+    bindsym $mod+e exec $term -e $explr-cli 
+
+# GUI File Explorer
+set $explr thunar
+    bindsym $mod+Shift+e exec $explr
+
+# Task Manager
+set $tskmngr htop
+    bindsym $mod+r exec $term -e $tskmngr
+
+# Email Client
+set $email neomutt
+
+# Music Client
+set $music ncmpcpp
+    bindsym $mod+m exec $term -e $music
+
+# Wifi
+set $wireless nmcli dev wifi rescan & $term -e nmtui
+    bindsym $mod+Shift+w exec $wireless
+
+# Notes
+set $notes flatpak run md.obsidian.Obsidian
+    bindsym $mod+Shift+n exec $notes
+
+# TODO List
+    bindsym $mod+n exec $term -e nvim ~/Documents/Notes/TODO.md
+
+# Audio Mixer
+set $audio pulsemixer
+   bindsym $mod+a exec $term -e $audio 
+
+#set $sync syncthing
+#    bindsym $mod+Shift+s exec $term -e $sync
+
+
+#######################################################
+## CUSTOM PROGRAMS:
+#######################################################
+
+# Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+BackSpace exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+# Lock Screen
+    bindsym $mod+Backspace exec swaylock --image ~/.local/share/lckscrn.png --show-failed-attempts
+
+# Screenshots
+    bindsym Print exec bash ~/.local/bin/wl-screenshot
+
+# Bookmarks
+    bindsym $mod+b exec zsh ~/.local/bin/dmenu-snippet

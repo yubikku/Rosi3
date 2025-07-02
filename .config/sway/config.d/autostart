@@ -1,6 +1,13 @@
-#
-# Wayland Specific Autostarts
-#
+#######################################################
+## AUTOSTART PROGRAMS:
+#######################################################
+
+exec_always --no-startup-id /usr/lib/polkit-1-gnome/polkit-gnome-authentication-agent-1
+exec_always --no-startup-id mpd
+exec_always --no-startup-id fcxit
+exec_always --no-startup-id syncthing -no-browser
+exec_always --no-startup-id autotiling
+
 # Set wallpaper:
 output * bg ~/.local/share/bg fill
 
