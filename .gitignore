@@ -7,6 +7,9 @@ zsh/.config/zsh/.zcompdump
 # external local bin
 .local/bin/bw
 .local/bin/autotiling
+.local/bin/wal
+
+# config cache
 .config/mpd/database
 .config/mpd/log
-.local/bin/wal
+.local/bin/yt-dlp

@@ -4,6 +4,7 @@
 [core]
 	editor = code --wait
 	autocrlf = input
+	autocrif = true
 [init]
 	defaultBranch = main
 [color]
