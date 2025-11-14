@@ -1,0 +1,54 @@
+#!/bin/sh
+
+WAL_JSON="$HOME/.cache/wal/colors.json"
+OUTFILE="$HOME/.config/swaylock/config"
+
+# Extract colors from pywal16 JSON
+get_color() {
+    jq -r ".colors.$1" "$WAL_JSON"
+}
+
+BG="$(get_color color0)"
+FG="$(get_color color15)"
+WRONG="$(get_color color1)"
+VERIFY="$(get_color color2)"
+HIGHLIGHT="$(get_color color3)"
+RING="$(get_color color4)"
+
+# Create swaylock config
+cat > "$OUTFILE" <<EOF
+# OPTIONS
+ignore-empty-password
+show-failed-attempts
+
+# APPEARANCE
+indicator-caps-lock
+indicator-idle-visible
+indicator-radius=100
+indicator-thickness=10
+
+## COLOR
+color=$BG
+inside-color=$BG
+ring-color=$RING
+line-color=$BG
+separator-color=$BG
+text-color=$FG
+key-hl-color=$HIGHLIGHT
+bs-hl-color=$WRONG
+
+# States
+inside-clear-color=$BG
+ring-clear-color=$RING
+text-clear-color=$FG
+
+inside-ver-color=$BG
+ring-ver-color=$VERIFY
+text-ver-color=$FG
+
+inside-wrong-color=$BG
+ring-wrong-color=$WRONG
+text-wrong-color=$FG
+EOF
+
+echo "✅ swaylock config generated at $OUTFILE"

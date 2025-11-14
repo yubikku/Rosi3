@@ -8,15 +8,12 @@ exec_always --no-startup-id fcxit
 exec_always --no-startup-id syncthing -no-browser
 exec_always --no-startup-id autotiling
 
-# Set wallpaper:
-output * bg ~/.local/share/bg fill
-
 # Systemd and dbus activation environments
 exec systemctl --user import-environment WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
 exec dbus-update-activation-environment WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
 
 # Swayidle and Sway lock
 exec swayidle -w \
-         timeout 300 'swaylock -f --image ~/.local/share/lckscrn.png --show-failed-attempts' \
+         timeout 300 'swaylock -f' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f --image ~/.local/share/lckscrn.png --show-failed-attempts'
+         before-sleep 'swaylock -f'

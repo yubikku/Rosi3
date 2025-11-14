@@ -1,4 +1,32 @@
+# OPTIONS
 ignore-empty-password
 show-failed-attempts
-indicator-caps-lock
 
+# APPEARANCE
+indicator-caps-lock
+indicator-idle-visible
+indicator-radius=100
+indicator-thickness=10
+
+## COLOR
+color=282828
+inside-color=282828
+ring-color=458588
+line-color=282828
+separator-color=282828
+text-color=ebdbb2
+key-hl-color=d79921
+bs-hl-color=cc241d
+
+# States
+inside-clear-color=282828
+ring-clear-color=458588
+text-clear-color=ebdbb2
+
+inside-ver-color=282828
+ring-ver-color=98971a
+text-ver-color=ebdbb2
+
+inside-wrong-color=282828
+ring-wrong-color=cc241d
+text-wrong-color=ebdbb2

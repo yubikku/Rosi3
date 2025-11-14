@@ -67,7 +67,7 @@ set $audio pulsemixer
     bindsym $mod+Shift+BackSpace exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
 # Lock Screen
-    bindsym $mod+Backspace exec swaylock --image ~/.local/share/lckscrn.png --show-failed-attempts
+    bindsym $mod+Backspace exec swaylock
 
 # Screenshots
     bindsym Print exec bash ~/.local/bin/wl-screenshot

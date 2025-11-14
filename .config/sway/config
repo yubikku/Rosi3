@@ -23,6 +23,9 @@ set $right l
     # Resize
     bindsym $mod+x mode "resize"
 
+    # Help
+    bindsym $mod+F1 ~/.loca/bin/help
+
 #
 # Moving around:
 #

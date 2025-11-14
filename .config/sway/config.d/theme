@@ -27,19 +27,21 @@ include "$HOME/.cache/wal/colors-sway"
 # client.class    <border> <background> <text>      <indicator> <child_border>
 client.focused    $color3  $color3      $foreground $foreground $color3
 
+# Set wallpaper:
+output * bg $wallpaper fill
+
 bar {
     status_command i3status
     position top
 
     colors {
-        background #1f1f28
-        statusline #7e9cd8
-        separator #c0a36e
+        background $background
+        statusline $color12
+        separator $color3
 
-        focused_workspace  #7e9cd8 #c0a36e #1f1f28
-        active_workspace   #333333 #5f676a #7e9cd8
-        inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #2f343a #900000 #ffffff
-        binding_mode       #2f343a #900000 #ffffff
+        focused_workspace  $color8 $color4  $color0
+        active_workspace   $color8 $color12 $color7
+        inactive_workspace $color8 $color0  $color7
+        urgent_workspace   $color8 $color1  $color0
     }
 }
